@@ -9,6 +9,7 @@ namespace UnitTestProject1
     {
         FindingMaximum find;
         [TestInitialize]
+        //when ever the testmethod call before that this testinitializer will call
         public void SetUp()
         {
           find = new FindingMaximum();
@@ -19,7 +20,6 @@ namespace UnitTestProject1
             //Arrang
             int firstValue = 28, secondValue = 6, thirdValue = 13;
             int expected = 28 ;
-            //FindingMaximum find = new FindingMaximum();
             //Act
             int actual = find.MaxValue(firstValue, secondValue, thirdValue);
             //Assert
@@ -31,7 +31,6 @@ namespace UnitTestProject1
             //Arrang
             int firstValue = 21, secondValue = 26, thirdValue = 13;
             int expected = 26;
-            //FindingMaximum find = new FindingMaximum();
             //Act
             int actual = find.MaxValue(firstValue, secondValue, thirdValue);
             //Assert
@@ -43,7 +42,6 @@ namespace UnitTestProject1
             //Arrang
             int firstValue = 20, secondValue = 26, thirdValue = 33;
             int expected = 33;
-            //FindingMaximum find = new FindingMaximum();
             //Act
             int actual = find.MaxValue(firstValue, secondValue, thirdValue);
             //Assert
