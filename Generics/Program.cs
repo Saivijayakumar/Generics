@@ -24,9 +24,9 @@ namespace Generics
             FindingMaximum<float> findForFloat = new FindingMaximum<float>(floatArray);
             FindingMaximum<string> findForString = new FindingMaximum<string>(stringArray);
 
-            Console.WriteLine("Maximum Integer Number : " + findForInt.FindingMaxValue());
-            Console.WriteLine("Maximum Float Number : " + findForFloat.FindingMaxValue());
-            Console.WriteLine("Maximum String : " + findForString.FindingMaxValue());
+            findForInt.PrintMax();
+            findForFloat.PrintMax();
+            findForString.PrintMax();
             Console.ReadLine();
         }
     }

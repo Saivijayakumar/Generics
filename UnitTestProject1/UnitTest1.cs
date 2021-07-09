@@ -17,7 +17,7 @@ namespace UnitTestProject1
             int expected = 40;
             FindingMaximum<int> find = new FindingMaximum<int>(intArray);
             //Arrang
-            int actual = find.FindingMaxValue();
+            int actual = find.TestMaximum();
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -30,7 +30,7 @@ namespace UnitTestProject1
             float expected = 3.7f;
             FindingMaximum<float> find = new FindingMaximum<float>(floatArray);
             //Arrang
-            float actual = find.FindingMaxValue();
+            float actual = find.TestMaximum();
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -43,7 +43,7 @@ namespace UnitTestProject1
             string expected = "Rain";
             FindingMaximum<string> find = new FindingMaximum<string>(strArray);
             //Arrang
-            string actual = find.FindingMaxValue();
+            string actual = find.TestMaximum();
             //Assert
             Assert.AreEqual(expected, actual);
         }

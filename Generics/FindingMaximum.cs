@@ -21,11 +21,16 @@ namespace Generics
             return array;
         }
         //It returns the last element in an array
-        public T FindingMaxValue()
+        public T TestMaximum()
         {
             T[] sorted = this.Sort();
             return sorted[sorted.Length -1];
         }
-
+        //calling Testmaximum method form printmax
+        public void PrintMax()
+        {
+            T result = TestMaximum();
+            Console.WriteLine($"Maximum is {result}");
+        }
     }
 }
