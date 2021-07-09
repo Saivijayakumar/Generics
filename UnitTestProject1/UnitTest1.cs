@@ -18,10 +18,10 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             //Arrang
-            float firstValue = 28.6f, secondValue = 6.9f, thirdValue = 13.5f;
-            float expected = 28.6f ;
+            String firstname = "zero", secondname = "To", thirdname = "Hero";
+            string expected = "zero" ;
             //Act
-            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaxStringValue(firstname, secondname, thirdname);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -29,10 +29,10 @@ namespace UnitTestProject1
         public void TestMethod2()
         {
             //Arrang
-            float firstValue = 6.5f, secondValue = 6.9f, thirdValue = 6.8f;
-            float expected = 6.9f;
+            String firstname = "sai", secondname = "vijaya", thirdname = "kumar";
+            string expected = "vijaya";
             //Act
-            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaxStringValue(firstname, secondname, thirdname);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -40,10 +40,10 @@ namespace UnitTestProject1
         public void TestMethod3()
         {
             //Arrang
-            float firstValue = 28.6f, secondValue = 6.9f, thirdValue = 33.5f;
-            float expected = 33.5f;
+            String firstname = "Hero", secondname = "To", thirdname = "zero";
+            string expected = "zero";
             //Act
-            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaxStringValue(firstname, secondname, thirdname);
             //Assert
             Assert.AreEqual(expected, actual);
         }
