@@ -9,15 +9,18 @@ namespace Generics
     public class  FindingMaximum<T> where T :IComparable
     {
         public T[] array;
+        //Parameter constructor 
         public FindingMaximum(T[] array)
         {
             this.array = array;
         }
+        //It returns Sorted array
         public T[] Sort()
         {
             Array.Sort(array);
             return array;
         }
+        //It returns the last element in an array
         public T FindingMaxValue()
         {
             T[] sorted = this.Sort();
