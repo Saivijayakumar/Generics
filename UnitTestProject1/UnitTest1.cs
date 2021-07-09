@@ -18,10 +18,10 @@ namespace UnitTestProject1
         public void TestMethod1()
         {
             //Arrang
-            int firstValue = 28, secondValue = 6, thirdValue = 13;
-            int expected = 28 ;
+            float firstValue = 28.6f, secondValue = 6.9f, thirdValue = 13.5f;
+            float expected = 28.6f ;
             //Act
-            int actual = find.MaxValue(firstValue, secondValue, thirdValue);
+            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -29,10 +29,10 @@ namespace UnitTestProject1
         public void TestMethod2()
         {
             //Arrang
-            int firstValue = 21, secondValue = 26, thirdValue = 13;
-            int expected = 26;
+            float firstValue = 6.5f, secondValue = 6.9f, thirdValue = 6.8f;
+            float expected = 6.9f;
             //Act
-            int actual = find.MaxValue(firstValue, secondValue, thirdValue);
+            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }
@@ -40,10 +40,10 @@ namespace UnitTestProject1
         public void TestMethod3()
         {
             //Arrang
-            int firstValue = 20, secondValue = 26, thirdValue = 33;
-            int expected = 33;
+            float firstValue = 28.6f, secondValue = 6.9f, thirdValue = 33.5f;
+            float expected = 33.5f;
             //Act
-            int actual = find.MaxValue(firstValue, secondValue, thirdValue);
+            float actual = find.MaxFloatValue(firstValue, secondValue, thirdValue);
             //Assert
             Assert.AreEqual(expected, actual);
         }

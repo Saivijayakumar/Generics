@@ -15,8 +15,8 @@ namespace Generics
         static void Main(string[] args)
         {
             FindingMaximum finding = new FindingMaximum();
-            int maxvalue = finding.MaxValue(10,21,2);
-            Console.WriteLine($"The maximum value of three numbers is {maxvalue} ");
+            float maxValue = finding.MaxFloatValue(10.3f, 20.6f, 20.5f);
+            Console.WriteLine("The maximum value of three numbers is {0} ",maxValue);
             Console.ReadLine();
         }
     }
